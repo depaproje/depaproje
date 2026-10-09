@@ -1,0 +1,16 @@
+# Optional Wrangler configuration example.
+# Copy to wrangler.toml only after replacing the D1 database ID.
+name = "depaproje"
+pages_build_output_dir = "./public"
+compatibility_date = "2026-10-10"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "depaproje-data"
+database_id = "REPLACE_WITH_REAL_D1_DATABASE_ID"
+
+[[r2_buckets]]
+binding = "IMAGES"
+bucket_name = "depaproje-images"
+
+# Set ADMIN_PASSWORD as a secret in Cloudflare Dashboard; do not put it here.

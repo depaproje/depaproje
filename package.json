@@ -1,6 +1,12 @@
 {
-  "name": "depaproje",
+  "name": "depaproje-cloudflare",
   "private": true,
   "type": "module",
-  "dependencies": { "@netlify/blobs": "^8.1.0" }
+  "scripts": {
+    "dev": "wrangler pages dev public",
+    "deploy": "wrangler pages deploy public --project-name depaproje"
+  },
+  "devDependencies": {
+    "wrangler": "^4.0.0"
+  }
 }
